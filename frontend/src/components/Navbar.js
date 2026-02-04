@@ -103,15 +103,24 @@ const Navbar = () => {
             <span className="link-text">Activities</span>
           </Link>
           
-          <Link 
-            to="/profile" 
-            className={`sidebar-link ${isActive('/profile') ? 'active' : ''}`}
-            onClick={handleLinkClick}
-          >
-            <span className="link-icon">👤</span>
-            <span className="link-text">Profile</span>
-          </Link>
-        </div>
+        <Link 
+          to="/profile" 
+          className={`sidebar-link ${isActive('/profile') ? 'active' : ''}`}
+          onClick={handleLinkClick}
+        >
+          <span className="link-icon">👤</span>
+          <span className="link-text">Profile</span>
+        </Link>
+
+        <Link 
+          to="/ai-recommendations" 
+          className={`sidebar-link ${isActive('/ai-recommendations') ? 'active' : ''}`}
+          onClick={handleLinkClick}
+        >
+          <span className="link-icon">🤖</span>
+          <span className="link-text">AI Assistant</span>
+        </Link>
+      </div>
 
         <div className="sidebar-footer">
           <div className="user-info">

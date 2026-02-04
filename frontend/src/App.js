@@ -8,6 +8,7 @@ import Register from './pages/Register';
 import Profile from './pages/Profile';
 import Dashboard from './pages/Dashboard';
 import Activities from './pages/Activities';
+import AIRecommendations from './pages/AIRecommendations';
 import './App.css';
 
 function App() {
@@ -40,6 +41,14 @@ function App() {
               element={
                 <PrivateRoute>
                   <Profile />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/ai-recommendations"
+              element={
+                <PrivateRoute>
+                  <AIRecommendations />
                 </PrivateRoute>
               }
             />
