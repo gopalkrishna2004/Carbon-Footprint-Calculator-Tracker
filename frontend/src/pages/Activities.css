@@ -1,0 +1,68 @@
+.activities-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.activities-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.activities-header h1 {
+  color: white;
+  font-size: 32px;
+  margin: 0;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #4b5563;
+}
+
+.filter-btn:hover {
+  background: white;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: white;
+  border-color: #667eea;
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .activities-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .activities-header h1 {
+    font-size: 24px;
+  }
+
+  .filter-bar {
+    width: 100%;
+  }
+
+  .filter-btn {
+    flex: 1;
+    min-width: 120px;
+  }
+}

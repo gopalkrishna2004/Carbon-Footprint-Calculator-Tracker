@@ -1,0 +1,57 @@
+.pie-chart-card {
+  margin-bottom: 30px;
+  padding: 24px;
+}
+
+.pie-chart-card h2 {
+  color: #1f2937;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Pie Chart Tooltip */
+.pie-tooltip {
+  background: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 2px solid #e5e7eb;
+}
+
+.tooltip-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+}
+
+.tooltip-emissions {
+  font-size: 16px;
+  font-weight: 700;
+  color: #667eea;
+  margin: 4px 0;
+}
+
+.tooltip-percent {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 4px 0;
+}
+
+.tooltip-count {
+  font-size: 12px;
+  color: #9ca3af;
+  margin: 4px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .pie-chart-card {
+    padding: 16px;
+  }
+
+  .pie-chart-card h2 {
+    font-size: 18px;
+  }
+}

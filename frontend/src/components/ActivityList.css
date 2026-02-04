@@ -1,0 +1,162 @@
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.activity-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.activity-main {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.activity-icon {
+  font-size: 32px;
+  min-width: 40px;
+}
+
+.activity-info {
+  flex: 1;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.activity-header h4 {
+  color: #1f2937;
+  margin: 0;
+  font-size: 18px;
+}
+
+.activity-date {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.activity-details {
+  color: #4b5563;
+  margin: 0;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.activity-notes {
+  color: #6b7280;
+  margin: 8px 0 0 0;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.activity-emission {
+  text-align: center;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+  min-width: 100px;
+}
+
+.emission-value {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.emission-unit {
+  font-size: 12px;
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+.activity-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-icon {
+  background: #f3f4f6;
+  border: none;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.btn-icon:hover {
+  background: #e5e7eb;
+  transform: scale(1.1);
+}
+
+.btn-delete:hover {
+  background: #fee2e2;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.empty-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.empty-state h3 {
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.empty-state p {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .activity-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .activity-main {
+    width: 100%;
+  }
+
+  .activity-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .activity-emission {
+    width: 100%;
+  }
+
+  .activity-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
