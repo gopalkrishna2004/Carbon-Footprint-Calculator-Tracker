@@ -33,7 +33,7 @@ const ComparisonCard = ({ currentStats, previousStats, period }) => {
 
   return (
     <div className="comparison-card card">
-      <h2>📊 Period Comparison</h2>
+      <h2>Period Comparison</h2>
       
       <div className="comparison-content">
         <div className="comparison-row">
@@ -64,22 +64,20 @@ const ComparisonCard = ({ currentStats, previousStats, period }) => {
             </div>
           ) : isIncrease ? (
             <div className="increase">
-              <span className="change-icon">📈</span>
               <span className="change-text">
                 <strong>+{Math.abs(difference).toFixed(2)} kg CO₂</strong> ({percentChange}%) increase from {getPeriodText()}
               </span>
               <div className="suggestion">
-                💡 Consider reviewing your activities to reduce emissions
+                Consider reviewing your activities to reduce emissions
               </div>
             </div>
           ) : (
             <div className="decrease">
-              <span className="change-icon">📉</span>
               <span className="change-text">
                 <strong>-{Math.abs(difference).toFixed(2)} kg CO₂</strong> ({Math.abs(percentChange)}%) decrease from {getPeriodText()}
               </span>
               <div className="suggestion">
-                🎉 Great job! You're reducing your carbon footprint!
+                Great job! You're reducing your carbon footprint!
               </div>
             </div>
           )}

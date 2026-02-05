@@ -6,12 +6,13 @@
   left: 0;
   right: 0;
   height: 60px;
-  background: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: #1e293b;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
   z-index: 1001;
+  border-bottom: 1px solid #334155;
 }
 
 .hamburger-btn {
@@ -30,7 +31,7 @@
 .hamburger-line {
   width: 100%;
   height: 3px;
-  background: #1f2937;
+  background: #f8fafc;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -53,20 +54,21 @@
   gap: 8px;
   font-size: 18px;
   font-weight: 700;
-  color: #1f2937;
+  color: #f8fafc;
 }
 
 .mobile-avatar {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #475569;
+  color: #f8fafc;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   font-size: 16px;
+  border: 2px solid #64748b;
 }
 
 /* Sidebar Overlay */
@@ -88,17 +90,18 @@
   top: 0;
   height: 100vh;
   width: 260px;
-  background: white;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  background: #1e293b;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   z-index: 1000;
   transition: transform 0.3s ease;
+  border-right: 1px solid #334155;
 }
 
 .sidebar-header {
   padding: 24px 20px;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #334155;
 }
 
 .sidebar-logo {
@@ -106,7 +109,7 @@
   align-items: center;
   gap: 12px;
   text-decoration: none;
-  color: #1f2937;
+  color: #f8fafc;
 }
 
 .logo-icon {
@@ -116,7 +119,7 @@
 .logo-text {
   font-size: 20px;
   font-weight: 700;
-  color: #1f2937;
+  color: #f8fafc;
 }
 
 .sidebar-menu {
@@ -132,7 +135,7 @@
   align-items: center;
   gap: 12px;
   padding: 14px 20px;
-  color: #6b7280;
+  color: #94a3b8;
   text-decoration: none;
   font-weight: 600;
   font-size: 15px;
@@ -141,14 +144,14 @@
 }
 
 .sidebar-link:hover {
-  background: #f9fafb;
-  color: #667eea;
+  background: #334155;
+  color: #f8fafc;
 }
 
 .sidebar-link.active {
-  background: linear-gradient(90deg, rgba(102, 126, 234, 0.1) 0%, transparent 100%);
-  color: #667eea;
-  border-left-color: #667eea;
+  background: #334155;
+  color: #f8fafc;
+  border-left-color: #f8fafc;
 }
 
 .link-icon {
@@ -161,7 +164,7 @@
 
 .sidebar-footer {
   padding: 16px;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid #334155;
 }
 
 .user-info {
@@ -169,22 +172,24 @@
   align-items: center;
   gap: 12px;
   padding: 12px;
-  background: #f9fafb;
+  background: #0f172a;
   border-radius: 8px;
   margin-bottom: 12px;
+  border: 1px solid #334155;
 }
 
 .user-avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #475569;
+  color: #f8fafc;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   font-size: 18px;
+  border: 2px solid #64748b;
 }
 
 .user-details {
@@ -194,7 +199,7 @@
 
 .user-name {
   font-weight: 600;
-  color: #1f2937;
+  color: #f8fafc;
   font-size: 14px;
   white-space: nowrap;
   overflow: hidden;
@@ -203,7 +208,7 @@
 
 .user-email {
   font-size: 12px;
-  color: #6b7280;
+  color: #94a3b8;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -215,10 +220,10 @@
   align-items: center;
   gap: 12px;
   padding: 12px 16px;
-  background: #fee2e2;
-  border: none;
+  background: #334155;
+  border: 1px solid #475569;
   border-radius: 8px;
-  color: #991b1b;
+  color: #e2e8f0;
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
@@ -226,7 +231,7 @@
 }
 
 .logout-btn:hover {
-  background: #fecaca;
+  background: #475569;
   transform: translateY(-2px);
 }
 

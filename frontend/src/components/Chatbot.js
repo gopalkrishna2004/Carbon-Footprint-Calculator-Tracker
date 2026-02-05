@@ -7,7 +7,7 @@ const Chatbot = ({ period, onClose }) => {
   const [messages, setMessages] = useState([
     {
       type: 'bot',
-      text: "Hi! 👋 I'm your AI carbon footprint assistant. Ask me anything about reducing your emissions!",
+      text: "Hi! I'm your AI carbon footprint assistant. Ask me anything about reducing your emissions!",
       timestamp: new Date().toISOString(),
     },
   ]);
@@ -101,7 +101,7 @@ const Chatbot = ({ period, onClose }) => {
         </div>
         {onClose && (
           <button className="close-btn" onClick={onClose}>
-            ✕
+            Close
           </button>
         )}
       </div>
@@ -126,7 +126,7 @@ const Chatbot = ({ period, onClose }) => {
               <div className="message-time">{formatTime(message.timestamp)}</div>
             </div>
             {message.type === 'user' && (
-              <div className="message-avatar user-avatar">👤</div>
+              <div className="message-avatar user-avatar">U</div>
             )}
           </div>
         ))}
@@ -180,7 +180,7 @@ const Chatbot = ({ period, onClose }) => {
           onClick={() => handleSend()}
           disabled={loading || !input.trim()}
         >
-          {loading ? '⏳' : '📤'}
+          {loading ? 'Sending...' : 'Send'}
         </button>
       </div>
     </div>

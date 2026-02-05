@@ -11,7 +11,7 @@
 }
 
 .activities-header h1 {
-  color: white;
+  color: #f8fafc;
   font-size: 32px;
   margin: 0;
 }
@@ -25,25 +25,26 @@
 
 .filter-btn {
   padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.9);
-  border: 2px solid transparent;
+  background: #1e293b;
+  border: 2px solid #334155;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: #4b5563;
+  color: #94a3b8;
 }
 
 .filter-btn:hover {
-  background: white;
+  background: #334155;
   transform: translateY(-2px);
+  color: #f8fafc;
 }
 
 .filter-btn.active {
-  background: white;
-  border-color: #667eea;
-  color: #667eea;
+  background: #f8fafc;
+  border-color: #f8fafc;
+  color: #0f172a;
 }
 
 @media (max-width: 768px) {

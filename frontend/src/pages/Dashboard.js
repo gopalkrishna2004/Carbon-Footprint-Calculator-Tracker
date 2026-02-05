@@ -122,7 +122,7 @@ const Dashboard = () => {
       <div className="dashboard-container">
         <div className="dashboard-header">
           <div>
-            <h1>Welcome back, {user?.name}! 👋</h1>
+            <h1>Welcome back, {user?.name}!</h1>
             <p>Track your carbon footprint and make a difference</p>
           </div>
           <Link to="/activities">
@@ -163,7 +163,6 @@ const Dashboard = () => {
           <>
             <div className="stats-grid">
               <div className="stat-card card">
-                <div className="stat-icon">🌍</div>
                 <div className="stat-info">
                   <h3>Total Emissions</h3>
                   <div className="stat-value">{stats.totalEmissions} <span>kg CO₂</span></div>
@@ -174,7 +173,6 @@ const Dashboard = () => {
               </div>
 
               <div className="stat-card card">
-                <div className="stat-icon">📊</div>
                 <div className="stat-info">
                   <h3>Activities Logged</h3>
                   <div className="stat-value">{stats.activityCount} <span>activities</span></div>
@@ -183,7 +181,6 @@ const Dashboard = () => {
               </div>
 
               <div className="stat-card card">
-                <div className="stat-icon">📈</div>
                 <div className="stat-info">
                   <h3>Daily Average</h3>
                   <div className="stat-value">
@@ -224,16 +221,12 @@ const Dashboard = () => {
 
                   {/* Category Bars (Keep for additional detail) */}
                   <div className="chart-section card">
-                    <h2>📋 Detailed Breakdown</h2>
+                    <h2>Detailed Breakdown</h2>
                     <div className="category-breakdown">
                       {Object.entries(stats.byCategory).map(([category, data]) => (
                         <div key={category} className="category-item">
                           <div className="category-header">
                             <span className="category-name">
-                              {category === 'transportation' && '🚗'}
-                              {category === 'energy' && '⚡'}
-                              {category === 'diet' && '🍽️'}
-                              {category === 'consumption' && '🛍️'}
                               {' '}{category.charAt(0).toUpperCase() + category.slice(1)}
                             </span>
                             <span className="category-value">{data.emissions.toFixed(2)} kg CO₂</span>
@@ -258,7 +251,6 @@ const Dashboard = () => {
               </>
             ) : (
               <div className="empty-dashboard card">
-                <div className="empty-icon">📝</div>
                 <h3>No Activities Yet</h3>
                 <p>Start tracking your carbon footprint by adding your first activity!</p>
                 <Link to="/activities">
@@ -269,7 +261,6 @@ const Dashboard = () => {
           </>
         ) : (
           <div className="empty-dashboard card">
-            <div className="empty-icon">📊</div>
             <h3>Unable to Load Statistics</h3>
             <p>Please try refreshing the page</p>
           </div>
@@ -279,19 +270,19 @@ const Dashboard = () => {
           <h2>About Carbon Footprint</h2>
           <div className="info-grid">
             <div className="info-item">
-              <h4>🚗 Transportation</h4>
+              <h4>Transportation</h4>
               <p>Track emissions from cars, buses, trains, and flights</p>
             </div>
             <div className="info-item">
-              <h4>⚡ Energy</h4>
+              <h4>Energy</h4>
               <p>Monitor electricity, heating, and cooling consumption</p>
             </div>
             <div className="info-item">
-              <h4>🍽️ Diet</h4>
+              <h4>Diet</h4>
               <p>Calculate impact from food choices and waste</p>
             </div>
             <div className="info-item">
-              <h4>🛍️ Consumption</h4>
+              <h4>Consumption</h4>
               <p>Assess shopping habits and waste generation</p>
             </div>
           </div>

@@ -41,14 +41,7 @@ const AIRecommendations = () => {
   }, [fetchRecommendations, fetchInsights]);
 
   const getCategoryIcon = (category) => {
-    const icons = {
-      transportation: '🚗',
-      energy: '⚡',
-      diet: '🍽️',
-      consumption: '🛍️',
-      general: '💡',
-    };
-    return icons[category] || '💡';
+    return '';
   };
 
   const getImpactColor = (impact) => {
@@ -62,7 +55,7 @@ const AIRecommendations = () => {
 
   const getInsightType = (type) => {
     const types = {
-      success: { icon: '✅', color: '#10b981' },
+      success: { icon: '', color: '#10b981' },
       warning: { icon: '⚠️', color: '#f59e0b' },
       info: { icon: 'ℹ️', color: '#3b82f6' },
     };
@@ -81,7 +74,7 @@ const AIRecommendations = () => {
             className="btn btn-primary"
             onClick={() => setShowChatbot(!showChatbot)}
           >
-            {showChatbot ? '📊 View Recommendations' : '💬 Chat with AI'}
+            {showChatbot ? 'View Recommendations' : 'Chat with AI'}
           </button>
         </div>
 
@@ -113,7 +106,7 @@ const AIRecommendations = () => {
             {/* Insights Section */}
             {insights.length > 0 && (
               <div className="insights-section">
-                <h2>📊 Your Insights</h2>
+                <h2>Your Insights</h2>
                 <div className="insights-grid">
                   {insights.map((insight, index) => {
                     const typeInfo = getInsightType(insight.type);
@@ -142,7 +135,7 @@ const AIRecommendations = () => {
 
             {/* Recommendations Section */}
             <div className="recommendations-section">
-              <h2>💡 Personalized Recommendations</h2>
+              <h2>Personalized Recommendations</h2>
 
               {loading ? (
                 <div className="spinner"></div>
@@ -166,7 +159,7 @@ const AIRecommendations = () => {
                       <div className="rec-footer">
                         <div className="rec-savings">
                           <span className="savings-label">Potential Savings:</span>
-                          <span className="savings-value">💚 {rec.savings}</span>
+                          <span className="savings-value">{rec.savings}</span>
                         </div>
                       </div>
                     </div>
@@ -174,7 +167,6 @@ const AIRecommendations = () => {
                 </div>
               ) : (
                 <div className="empty-state card">
-                  <div className="empty-icon">📊</div>
                   <h3>Start Tracking Activities</h3>
                   <p>Log some activities to get personalized AI recommendations!</p>
                 </div>
@@ -191,7 +183,7 @@ const AIRecommendations = () => {
                 }}
                 disabled={loading}
               >
-                {loading ? '🔄 Generating...' : '🔄 Refresh Recommendations'}
+                {loading ? 'Generating...' : 'Refresh Recommendations'}
               </button>
             </div>
           </>

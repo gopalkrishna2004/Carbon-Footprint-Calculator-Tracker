@@ -11,13 +11,7 @@ const ActivityList = ({ activities, onEdit, onDelete }) => {
   };
 
   const getCategoryIcon = (category) => {
-    const icons = {
-      transportation: '🚗',
-      energy: '⚡',
-      diet: '🍽️',
-      consumption: '🛍️',
-    };
-    return icons[category] || '📊';
+    return '';
   };
 
   const getActivityDetails = (activity) => {
@@ -38,7 +32,6 @@ const ActivityList = ({ activities, onEdit, onDelete }) => {
   if (activities.length === 0) {
     return (
       <div className="empty-state card">
-        <div className="empty-icon">📝</div>
         <h3>No Activities Yet</h3>
         <p>Start tracking your carbon footprint by adding your first activity!</p>
       </div>
@@ -60,7 +53,7 @@ const ActivityList = ({ activities, onEdit, onDelete }) => {
               </div>
               <p className="activity-details">{getActivityDetails(activity)}</p>
               {activity.notes && (
-                <p className="activity-notes">📝 {activity.notes}</p>
+                <p className="activity-notes">Note: {activity.notes}</p>
               )}
             </div>
           </div>
@@ -76,14 +69,14 @@ const ActivityList = ({ activities, onEdit, onDelete }) => {
               onClick={() => onEdit(activity)}
               title="Edit"
             >
-              ✏️
+              Edit
             </button>
             <button
               className="btn-icon btn-delete"
               onClick={() => onDelete(activity._id)}
               title="Delete"
             >
-              🗑️
+              Delete
             </button>
           </div>
         </div>

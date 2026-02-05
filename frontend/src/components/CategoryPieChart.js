@@ -24,13 +24,7 @@ const CategoryPieChart = ({ data }) => {
   };
 
   function getCategoryIcon(category) {
-    const icons = {
-      transportation: '🚗',
-      energy: '⚡',
-      diet: '🍽️',
-      consumption: '🛍️',
-    };
-    return icons[category] || '📊';
+    return '';
   }
 
   // Custom label
@@ -67,7 +61,7 @@ const CategoryPieChart = ({ data }) => {
 
   return (
     <div className="pie-chart-card card">
-      <h2>🎯 Emissions by Category</h2>
+      <h2>Emissions by Category</h2>
       <ResponsiveContainer width="100%" height={350}>
         <PieChart>
           <Pie

@@ -41,25 +41,25 @@
 }
 
 .activity-header h4 {
-  color: #1f2937;
+  color: #f8fafc;
   margin: 0;
   font-size: 18px;
 }
 
 .activity-date {
-  color: #6b7280;
+  color: #94a3b8;
   font-size: 14px;
 }
 
 .activity-details {
-  color: #4b5563;
+  color: #cbd5e1;
   margin: 0;
   font-size: 14px;
   text-transform: capitalize;
 }
 
 .activity-notes {
-  color: #6b7280;
+  color: #94a3b8;
   margin: 8px 0 0 0;
   font-size: 13px;
   font-style: italic;
@@ -68,10 +68,11 @@
 .activity-emission {
   text-align: center;
   padding: 12px 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #334155;
   border-radius: 12px;
-  color: white;
+  color: #f8fafc;
   min-width: 100px;
+  border: 1px solid #475569;
 }
 
 .emission-value {
@@ -92,26 +93,29 @@
 }
 
 .btn-icon {
-  background: #f3f4f6;
-  border: none;
+  background: #334155;
+  border: 1px solid #475569;
   border-radius: 8px;
-  width: 40px;
-  height: 40px;
+  padding: 8px 12px;
+  min-width: 60px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 13px;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .btn-icon:hover {
-  background: #e5e7eb;
+  background: #475569;
   transform: scale(1.1);
 }
 
 .btn-delete:hover {
-  background: #fee2e2;
+  background: #7f1d1d;
+  border-color: #991b1b;
 }
 
 .empty-state {
@@ -125,12 +129,12 @@
 }
 
 .empty-state h3 {
-  color: #1f2937;
+  color: #f8fafc;
   margin-bottom: 12px;
 }
 
 .empty-state p {
-  color: #6b7280;
+  color: #94a3b8;
   font-size: 16px;
 }
 

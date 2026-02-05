@@ -4,7 +4,7 @@
 }
 
 .profile-container h1 {
-  color: white;
+  color: #f8fafc;
   margin-bottom: 30px;
   font-size: 32px;
   text-align: center;
@@ -19,24 +19,25 @@
 .tab-button {
   flex: 1;
   padding: 12px 24px;
-  background: rgba(255, 255, 255, 0.9);
-  border: 2px solid transparent;
+  background: #1e293b;
+  border: 2px solid #334155;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: #4b5563;
+  color: #94a3b8;
 }
 
 .tab-button:hover {
-  background: white;
+  background: #334155;
+  color: #f8fafc;
 }
 
 .tab-button.active {
-  background: white;
-  border-color: #667eea;
-  color: #667eea;
+  background: #f8fafc;
+  border-color: #f8fafc;
+  color: #0f172a;
 }
 
 .profile-content {

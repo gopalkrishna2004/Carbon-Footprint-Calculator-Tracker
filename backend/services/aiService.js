@@ -8,7 +8,7 @@ const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
  */
 exports.generateRecommendations = async (userData) => {
   try {
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-lite' });
 
     const prompt = `You are an expert environmental consultant helping users reduce their carbon footprint.
 
@@ -64,7 +64,7 @@ Return ONLY valid JSON, no additional text.`;
  */
 exports.chatWithAI = async (userMessage, userData) => {
   try {
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-lite' });
 
     const prompt = `You are a friendly and knowledgeable environmental assistant helping users understand and reduce their carbon footprint.
 

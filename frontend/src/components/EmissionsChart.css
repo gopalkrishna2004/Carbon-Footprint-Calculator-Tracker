@@ -4,7 +4,7 @@
 }
 
 .emissions-chart-card h2 {
-  color: #1f2937;
+  color: #f8fafc;
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 700;
@@ -17,16 +17,16 @@
 
 /* Custom Tooltip Styles */
 .custom-tooltip {
-  background: white;
+  background: #334155;
   padding: 12px 16px;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border: 2px solid #667eea;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border: 2px solid #475569;
 }
 
 .tooltip-date {
   font-size: 13px;
-  color: #6b7280;
+  color: #cbd5e1;
   margin: 0 0 8px 0;
   font-weight: 600;
 }
@@ -40,13 +40,13 @@
 
 .tooltip-label {
   font-size: 13px;
-  color: #6b7280;
+  color: #94a3b8;
 }
 
 .tooltip-emissions {
   font-size: 14px;
   font-weight: 700;
-  color: #667eea;
+  color: #f8fafc;
 }
 
 @media (max-width: 768px) {

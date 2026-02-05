@@ -55,7 +55,7 @@ const EmissionsChart = ({ data, period }) => {
 
   return (
     <div className="emissions-chart-card card">
-      <h2>📈 Emissions Trend</h2>
+      <h2>Emissions Trend</h2>
       <div className="chart-wrapper">
         <ResponsiveContainer width="100%" height={300}>
           <AreaChart

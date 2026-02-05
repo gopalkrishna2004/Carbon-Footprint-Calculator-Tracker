@@ -88,25 +88,25 @@ const Activities = () => {
             className={`filter-btn ${filter === 'transportation' ? 'active' : ''}`}
             onClick={() => setFilter('transportation')}
           >
-            🚗 Transportation
+            Transportation
           </button>
           <button
             className={`filter-btn ${filter === 'energy' ? 'active' : ''}`}
             onClick={() => setFilter('energy')}
           >
-            ⚡ Energy
+            Energy
           </button>
           <button
             className={`filter-btn ${filter === 'diet' ? 'active' : ''}`}
             onClick={() => setFilter('diet')}
           >
-            🍽️ Diet
+            Diet
           </button>
           <button
             className={`filter-btn ${filter === 'consumption' ? 'active' : ''}`}
             onClick={() => setFilter('consumption')}
           >
-            🛍️ Consumption
+            Consumption
           </button>
         </div>
 

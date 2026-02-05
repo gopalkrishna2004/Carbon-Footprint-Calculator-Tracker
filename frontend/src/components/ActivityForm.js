@@ -115,10 +115,10 @@ const ActivityForm = ({ activity, onSuccess, onCancel }) => {
               onChange={handleChange}
               required
             >
-              <option value="transportation">🚗 Transportation</option>
-              <option value="energy">⚡ Energy</option>
-              <option value="diet">🍽️ Diet</option>
-              <option value="consumption">🛍️ Consumption</option>
+              <option value="transportation">Transportation</option>
+              <option value="energy">Energy</option>
+              <option value="diet">Diet</option>
+              <option value="consumption">Consumption</option>
             </select>
           </div>
 

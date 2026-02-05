@@ -59,7 +59,6 @@ const Navbar = () => {
           <span className={`hamburger-line ${isMobileMenuOpen ? 'open' : ''}`}></span>
         </button>
         <div className="mobile-logo">
-          <span className="logo-icon">🌍</span>
           <span className="logo-text">Carbon Tracker</span>
         </div>
         <div className="mobile-avatar">
@@ -79,7 +78,6 @@ const Navbar = () => {
       <nav className={`sidebar ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
         <div className="sidebar-header">
           <Link to="/" className="sidebar-logo" onClick={handleLinkClick}>
-            <span className="logo-icon">🌍</span>
             <span className="logo-text">Carbon Tracker</span>
           </Link>
         </div>
@@ -90,7 +88,6 @@ const Navbar = () => {
             className={`sidebar-link ${isActive('/dashboard') ? 'active' : ''}`}
             onClick={handleLinkClick}
           >
-            <span className="link-icon">📊</span>
             <span className="link-text">Dashboard</span>
           </Link>
           
@@ -99,7 +96,6 @@ const Navbar = () => {
             className={`sidebar-link ${isActive('/activities') ? 'active' : ''}`}
             onClick={handleLinkClick}
           >
-            <span className="link-icon">📝</span>
             <span className="link-text">Activities</span>
           </Link>
           
@@ -108,7 +104,6 @@ const Navbar = () => {
           className={`sidebar-link ${isActive('/profile') ? 'active' : ''}`}
           onClick={handleLinkClick}
         >
-          <span className="link-icon">👤</span>
           <span className="link-text">Profile</span>
         </Link>
 
@@ -117,7 +112,6 @@ const Navbar = () => {
           className={`sidebar-link ${isActive('/ai-recommendations') ? 'active' : ''}`}
           onClick={handleLinkClick}
         >
-          <span className="link-icon">🤖</span>
           <span className="link-text">AI Assistant</span>
         </Link>
       </div>
@@ -133,7 +127,6 @@ const Navbar = () => {
             </div>
           </div>
           <button onClick={handleLogout} className="logout-btn">
-            <span className="link-icon">🚪</span>
             <span className="link-text">Logout</span>
           </button>
         </div>
