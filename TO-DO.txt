@@ -1,4 +1,0 @@
-update the co2 caliculation logic 
-stop the ai recommendation when co2 is 0 for new users 
-
-demo link: https://drive.google.com/file/d/1yrBlqKOjrKGAmR4wUO4SmFErm1I3S6yP/view?usp=drive_link
