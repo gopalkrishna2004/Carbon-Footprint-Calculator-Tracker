@@ -1,0 +1,76 @@
+
+                    CARBON FOOTPRINT CALCULATOR - SUBMISSION
+
+
+Student Name: N.Siva Gopala Krishna 
+Student ID: 220401
+
+
+PROJECT LINKS:
+
+Demo Video:
+https://drive.google.com/file/d/1yrBlqKOjrKGAmR4wUO4SmFErm1I3S6yP/view?usp=drive_link
+
+SUBMISSION CHECKLIST:
+Source Code (GitHub Repository)
+Demo Video
+README.md with setup instructions
+Problem Statement Document (PDF)
+AI Usage Report (PDF)
+SUBMISSION.txt (this file)
+
+PROJECT OVERVIEW:
+
+Project Name: Carbon Footprint Calculator & Tracker
+
+Description: 
+A full-stack web application that helps individuals and small businesses 
+track and reduce their carbon footprint through AI-powered personalized 
+recommendations.
+
+Tech Stack:
+- Frontend: React, React Router, Recharts, Axios
+- Backend: Node.js, Express, MongoDB
+- AI Integration: Google Gemini AI
+- Authentication: JWT
+
+Key Features:
+- User authentication and authorization
+- Activity tracking (transportation, energy, food, waste)
+- Real-time carbon emissions calculation
+- Interactive dashboard with charts and analytics
+- AI-powered personalized recommendations
+- Chatbot for sustainability queries
+- Comparison with global/national averages
+
+INSTALLATION INSTRUCTIONS:
+
+Prerequisites:
+- Node.js installed
+- MongoDB installed or MongoDB Atlas account
+- Google Gemini API Key
+
+Backend Setup:
+1. cd backend
+2. npm install
+3. Create .env file with required credentials
+4. npm run dev
+
+Frontend Setup:
+1. cd frontend
+2. npm install
+3. npm start
+
+Application will run on:
+- Backend: http://localhost:5000
+- Frontend: http://localhost:3000
+
+ENVIRONMENT VARIABLES:
+
+Backend .env file requires:
+- PORT=5000
+- MONGODB_URI=[MongoDB connection string]
+- JWT_SECRET=[Your JWT secret]
+- GEMINI_API_KEY=[Google Gemini API key]
+- NODE_ENV=development
+
